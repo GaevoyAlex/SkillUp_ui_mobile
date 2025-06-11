@@ -14,15 +14,15 @@ Widget cardVacancy(
     child: Card(
       color: AppColors.cardVacancyColor,
       clipBehavior: Clip.antiAlias,
-      margin: EdgeInsets.zero, // Убираем внешние отступы у Card
+      margin: EdgeInsets.zero,  
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),), // Опционально: скругление углов
+        borderRadius: BorderRadius.circular(20),),  
       child: Container(
-        width: double.infinity, // Растягиваем на всю доступную ширину
-        padding: EdgeInsets.all(16), // Внутренние отступы
+        width: double.infinity,  
+        padding: EdgeInsets.all(16),  
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start, // Выравнивание по правому краю
-          mainAxisSize: MainAxisSize.min, // Занимаем только нужное место по высоте
+          crossAxisAlignment: CrossAxisAlignment.start,  
+          mainAxisSize: MainAxisSize.min, 
           children: [
             Text(
               'Название вакансии',
@@ -90,7 +90,7 @@ Widget cardVacancy(
                     borderRadius: BorderRadius.circular(20)),
                   textStyle: TextStyle(fontSize: 16,),  
                 ),
-              child: Padding(padding: EdgeInsets.only(left: 40,right: 40),child:Text('Просмотреть')),
+              child: Row(mainAxisAlignment: MainAxisAlignment.center, children:[ Text('Просмотреть')]),
               )
             )
           ],

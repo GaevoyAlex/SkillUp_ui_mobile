@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:skillup_mobile/presentation/Home/Screen/HomePageScreen.dart';
+import 'package:skillup_mobile/presentation/Learn/Screen/LearnPageScreen.dart';
+import 'package:skillup_mobile/presentation/Profile/Screen/ProfilePageScreen.dart';
 
 import '../../../theme/colors.dart';
 
@@ -17,8 +19,8 @@ class _MainbottomNavigationState extends State<MainBottomNavigation> {
 
     static const List<Widget> _widgetOptions = <Widget>[
     Homepagescreen(),
-    Homepagescreen(),
-    Homepagescreen(),
+    LearnPageScreen(),
+    ProfileScreenPage(),
 
   ];
 
