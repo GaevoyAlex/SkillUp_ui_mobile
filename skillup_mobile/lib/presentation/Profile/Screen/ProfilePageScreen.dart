@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../Main/Widgets/main_widgets.dart';
+
 class ProfileScreenPage extends StatefulWidget {
   const ProfileScreenPage({super.key});
 
@@ -10,8 +12,15 @@ class ProfileScreenPage extends StatefulWidget {
 class _ProfileScreenPageState extends State<ProfileScreenPage> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Profile page'),
+    return mainScafoldWidget(
+      //AppBar title
+      'Profile',
+      //Body
+      Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
