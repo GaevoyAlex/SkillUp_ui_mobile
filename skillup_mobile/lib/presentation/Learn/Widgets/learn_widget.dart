@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../../theme/colors.dart' show AppColors;
 
-Widget learnContainerWidget (widget) {
+Widget stackContainerWidget (widget) {
   return Padding(
     padding: EdgeInsets.all(14),
     child:  Container(
@@ -16,7 +16,19 @@ Widget learnContainerWidget (widget) {
         borderRadius: BorderRadius.circular(20),
         border: Border.all(width: 1),
       ),
-      child: widget,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,  
+        children: [
+          Text('Навыки',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+            color: AppColors.textOnPrimary
+          ),),
+          SizedBox(height: 10,),
+          widget
+        ],
+      ) ,
     )
   );
 }

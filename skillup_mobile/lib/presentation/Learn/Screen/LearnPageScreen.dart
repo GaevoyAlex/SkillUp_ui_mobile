@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skillup_mobile/presentation/Learn/Widgets/learn_widget.dart';
+import 'package:skillup_mobile/theme/colors.dart';
 
 import '../../Main/Widgets/main_widgets.dart';
 
@@ -19,12 +20,78 @@ class _LearnPageScreenState extends State<LearnPageScreen> {
       //Body
       Column(
         children: [
-           learnContainerWidget(
-            Column(
+           stackContainerWidget(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('data')
+              Column(
+              crossAxisAlignment: CrossAxisAlignment.start,  
+              mainAxisSize: MainAxisSize.min, 
+              children: [
+                for (var i = 0; i < 10; i++)
+                Container(
+                  padding: EdgeInsets.all(5),
+                  child: Row(
+                    children: [
+                      Icon(Icons.circle,
+                      size: 20,
+                      color: AppColors.buttonTextColor,),
+                      SizedBox(width: 10,),
+                      Text("Python",
+                      style: TextStyle(
+                        color: AppColors.textOnPrimary
+                      ),)
+                    ],
+                  ),
+                )  
               ],
             ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,  
+              mainAxisSize: MainAxisSize.min, 
+              children: [
+                for (var i = 0; i < 10; i++)
+                Container(
+                  padding: EdgeInsets.all(5),
+                  child: Row(
+                    children: [
+                      Icon(Icons.circle,
+                      size: 20,
+                      color: AppColors.buttonTextColor,),
+                      SizedBox(width: 10,),
+                      Text("Python",
+                      style: TextStyle(
+                        color: AppColors.textOnPrimary
+                      ),)
+                    ],
+                  ),
+                ) 
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,  
+              mainAxisSize: MainAxisSize.min, 
+              children: [
+                for (var i = 0; i < 10; i++)
+                Container(
+                  padding: EdgeInsets.all(5),
+                  child: Row(
+                    children: [
+                      Icon(Icons.circle,
+                      size: 20,
+                      color: AppColors.buttonTextColor,),
+                      SizedBox(width: 10,),
+                      Text("Python",
+                      style: TextStyle(
+                        color: AppColors.textOnPrimary
+                      ),)
+                    ],
+                  ),
+                ) 
+              ],
+            ),
+            ],)
+
            )
         ],
       ),
