@@ -21,6 +21,7 @@ class _LearnPageScreenState extends State<LearnPageScreen> {
       Column(
         children: [
            stackContainerWidget(
+            'Навыки',
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -91,7 +92,15 @@ class _LearnPageScreenState extends State<LearnPageScreen> {
               ],
             ),
             ],)
-
+           ),
+            //TODO кнопка показа анализа резюме
+          stackContainerWidget(
+            'Рейтинг зарплат',
+            Column(
+              children: [
+                Text('data'),
+              ],
+            )
            )
         ],
       ),

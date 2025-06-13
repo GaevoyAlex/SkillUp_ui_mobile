@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../../theme/colors.dart' show AppColors;
 
-Widget stackContainerWidget (widget) {
+Widget stackContainerWidget (title,widget,) {
   return Padding(
     padding: EdgeInsets.all(14),
     child:  Container(
@@ -19,7 +19,7 @@ Widget stackContainerWidget (widget) {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,  
         children: [
-          Text('Навыки',
+          Text(title,
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 20,
@@ -32,3 +32,5 @@ Widget stackContainerWidget (widget) {
     )
   );
 }
+
+
